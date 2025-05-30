@@ -1,15 +1,474 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hello World</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link href='/style.css' rel='stylesheet'>
 </head>
+
 <body>
-  <h1>Hello, world!</h1>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  <nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm py-3">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="https://placehold.co/30" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+        BagusXMahendra
+      </a>
+      <!-- Hamburger toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menu items -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SERVICE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">WORK</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PRICING</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">TESTIMONIAL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Login Button -->
+      <div class="d-none d-lg-block">
+        <button type="button" class="btn btn-outline-primary">Login</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="https://placehold.co/700x500" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+          height="500" loading="lazy">
+      </div>
+
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1>
+        <p class="lead">
+          Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end
+          open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt
+          components, and powerful JavaScript plugins.
+        </p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container px-4 py-5" id="about-me-header">
+    <div class="text-center mb-5">
+      <small>MY SERVICE</small>
+      <h2 class="fs-2">What I Do</h2>
+    </div>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div
+          class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <i class="bi bi-file-code-fill"></i>
+
+        </div>
+        <div>
+          <h3 class="fs-2 text-body-emphasis">Software Engineer</h3>
+          <p>
+            Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
+            probably just keep going until we run out of words.
+          </p>
+          <a href="#" class="btn btn-primary">Primary button</a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div
+          class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <i class="bi bi-people-fill"></i>
+
+        </div>
+        <div>
+          <h3 class="fs-2 text-body-emphasis">Tech Leadership</h3>
+          <p>
+            Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
+            probably just keep going until we run out of words.
+          </p>
+          <a href="#" class="btn btn-primary">Primary button</a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div
+          class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <i class="bi bi-person-workspace"></i>
+
+        </div>
+        <div>
+          <h3 class="fs-2 text-body-emphasis">Content Creator</h3>
+          <p>
+            Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
+            probably just keep going until we run out of words.
+          </p>
+          <a href="#" class="btn btn-primary">Primary button</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container py-5">
+    <div class="text-center mb-5">
+      <small>ABOUT ME</small>
+      <h2 class="fs-2">Tech Speaker</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="https://placehold.co/746x600" alt="Restaurant" class="img-fluid rounded">
+        <div class="book-table">
+          <p>Book a Table</p>
+          <a href="tel:+155895548855">+1 5589 55488 55</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <p class="fst-italic text-muted">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+        </p>
+        <ul class="list-unstyled">
+          <li>
+            <i class="bi bi-check-circle-fill me-1"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </li>
+          <li>
+            <i class="bi bi-check-circle-fill me-1"></i>Duis aute irure dolor in reprehenderit in voluptate velit.
+          </li>
+          <li>
+            <i class="bi bi-check-circle-fill me-1"></i>
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.
+          </li>
+        </ul>
+        <p>
+          Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+        </p>
+        <div class="video-play-btn">
+          <img src="https://placehold.co/746x450" alt="Food Video" class="img-fluid rounded">
+          <a href="#" class="btn-play">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="red" class="bi bi-play-circle-fill"
+              viewBox="0 0 16 16">
+              <path
+                d="M16 8a8 8 0 1 1-16 0A8 8 0 0 1 16 8zM6.271 5.055A.5.5 0 0 0 5.5 5.5v5a.5.5 0 0 0 .771.424l4-2.5a.5.5 0 0 0 0-.848l-4-2.5z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container py-5" id="my-resume">
+    <div class="text-center mb-5">
+      <small>MY CAREER PATH</small>
+      <h2 class="fs-2">My Resume</h2>
+    </div>
+    <div class="text-center mb-5">
+      <a href="/assets/Bagus_Mahendra_CV.pdf" class="btn btn-primary btn-lg px-4" download>
+        <i class="bi bi-download me-2"></i>Download CV
+      </a>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-9">
+        <div class="bg-white rounded">
+          <h4 class="mb-2">Work Experience</h4>
+          <div class="d-flex mb-2 py-2 border-bottom">
+            <div>
+              <img src="https://placehold.co/48" alt="Logo" width="48" height="48" class="rounded align-text-top">
+            </div>
+            <div class="ms-3">
+              <h5>Senior Software Engineer</h5>
+              <div class="company-name">Tech Solutions Inc.</div>
+              <div class="date-location">Jan 2022 - Present · Kuala Lumpur, Malaysia</div>
+              <div class="experience-description">
+                Leading development of scalable web applications using Agile methodologies. Mentoring junior developers
+                and contributing to architectural decisions.
+                Working extensively with microservices, cloud platforms (AWS), and CI/CD pipelines... <span
+                  class="see-more-link">see more</span>
+              </div>
+              <div class="skills-tags">
+                <span class="skill-tag"><i class="bi bi-code-slash"></i>Java</span>
+                <span class="skill-tag"><i class="bi bi-code-slash"></i>Spring Boot</span>
+                <span class="skill-tag"><i class="bi bi-cloud-fill"></i>AWS</span>
+                <span class="skill-tag"><i class="bi bi-diagram-3-fill"></i>Microservices</span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex mb-2 py-2 border-bottom">
+            <div>
+              <img src="https://placehold.co/48" alt="Logo" width="48" height="48" class="rounded align-text-top">
+            </div>
+            <div class="ms-3">
+              <h5>Senior Software Engineer</h5>
+              <div class="company-name">Tech Solutions Inc.</div>
+              <div class="date-location">Jan 2022 - Present · Kuala Lumpur, Malaysia</div>
+              <div class="experience-description">
+                Leading development of scalable web applications using Agile methodologies. Mentoring junior developers
+                and contributing to architectural decisions.
+                Working extensively with microservices, cloud platforms (AWS), and CI/CD pipelines... <span
+                  class="see-more-link">see more</span>
+              </div>
+              <div class="skills-tags">
+                <span class="skill-tag"><i class="bi bi-code-slash"></i>Java</span>
+                <span class="skill-tag"><i class="bi bi-code-slash"></i>Spring Boot</span>
+                <span class="skill-tag"><i class="bi bi-cloud-fill"></i>AWS</span>
+                <span class="skill-tag"><i class="bi bi-diagram-3-fill"></i>Microservices</span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex mb-2 py-2 border-bottom">
+            <div>
+              <img src="https://placehold.co/48" alt="Logo" width="48" height="48" class="rounded align-text-top">
+            </div>
+            <div class="ms-3">
+              <h5>Senior Software Engineer</h5>
+              <div class="company-name">Tech Solutions Inc.</div>
+              <div class="date-location">Jan 2022 - Present · Kuala Lumpur, Malaysia</div>
+              <div class="experience-description">
+                Leading development of scalable web applications using Agile methodologies. Mentoring junior developers
+                and contributing to architectural decisions.
+                Working extensively with microservices, cloud platforms (AWS), and CI/CD pipelines... <span
+                  class="see-more-link">see more</span>
+              </div>
+              <div class="skills-tags">
+                <span class="skill-tag"><i class="bi bi-code-slash"></i>Java</span>
+                <span class="skill-tag"><i class="bi bi-code-slash"></i>Spring Boot</span>
+                <span class="skill-tag"><i class="bi bi-cloud-fill"></i>AWS</span>
+                <span class="skill-tag"><i class="bi bi-diagram-3-fill"></i>Microservices</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-3">
+        <div class="bg-white rounded py-2 mb-4">
+          <h4>Education</h4>
+          <div class="mb-2 py-2">
+            <h6>Master of Computer Science</h6>
+            <p>University of Malaya</p>
+            <p>2017 - 2019</p>
+          </div>
+          <div class="mb-2 py-2">
+            <h6>Bachelor of Software Engineering</h6>
+            <p>Multimedia University (MMU)</p>
+            <p>2013 - 2017</p>
+          </div>
+        </div>
+
+        <div class="resume-panel">
+          <h4>Certification</h4>
+          <div class="mb-2 py-2">
+            <h6>AWS Certified Solutions Architect - Associate</h6>
+            <p>Amazon Web Services</p>
+            <p>Issued: Mar 2021</p>
+          </div>
+          <div class="mb-2 py-2">
+            <h6>Certified ScrumMaster (CSM)</h6>
+            <p>Scrum Alliance</p>
+            <p>Issued: Jul 2020</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-5" id="my-blog">
+    <div class="text-center mb-5">
+      <small>MY LATEST POST</small>
+      <h2 class="fs-2">Social Media</h2>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 row-eq-height">
+      <div class="col">
+        <div class="card blog-card h-100">
+          <img src="https://placehold.co/600x400/333/fff?text=Cityscape" class="card-img-top" alt="Blog Post Image 1">
+          <div class="card-body d-flex flex-column">
+            <div class="author-info d-flex justify-content-between">
+              <span class="author-name text-start">Medium</span>
+              <span class="post-date">13th Dec '15</span>
+            </div>
+            <h5 class="card-title">BREAK THROUGH SELF DOUBT AND FEAR</h5>
+            <p class="card-text">
+              Dream interpretation has many forms; it can be done for the sake of fun, hobby or can be
+              taken up as a serious career.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card blog-card h-100">
+          <img src="https://placehold.co/600x400/555/fff?text=Fashion" class="card-img-top" alt="Blog Post Image 2">
+          <div class="card-body d-flex flex-column">
+            <div class="author-info d-flex justify-content-between">
+              <span class="author-name text-start">Youtube</span>
+              <span class="post-date">13th Dec '15</span>
+            </div>
+            <h5 class="card-title">PORTABLE FASHION FOR YOUNG WOMEN</h5>
+            <p class="card-text">
+              You may be a skillful, effective employer but if you
+              don't trust your personnel and the opposite, then
+              the chances of improving.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card blog-card h-100">
+          <img src="https://placehold.co/600x400/777/fff?text=Night+Sky" class="card-img-top" alt="Blog Post Image 3">
+          <div class="card-body d-flex flex-column">
+            <div class="author-info d-flex justify-content-between">
+              <span class="author-name text-start">Instagram</span>
+              <span class="post-date">13th Dec '15</span>
+            </div>
+            <h5 class="card-title">DO DREAMS SERVE AS A PREMONITION</h5>
+            <p class="card-text">
+              So many of us are demotivated to achieve
+              anything. Such people are not enthusiastic about
+              anything. They don't want to work involved.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card blog-card h-100">
+          <img src="https://placehold.co/600x400/555/fff?text=Fashion" class="card-img-top" alt="Blog Post Image 2">
+          <div class="card-body d-flex flex-column">
+            <div class="author-info d-flex justify-content-between">
+              <span class="author-name text-start">Youtube</span>
+              <span class="post-date">13th Dec '15</span>
+            </div>
+            <h5 class="card-title">PORTABLE FASHION FOR YOUNG WOMEN</h5>
+            <p class="card-text">
+              You may be a skillful, effective employer but if you
+              don't trust your personnel and the opposite, then
+              the chances of improving.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card blog-card h-100">
+          <img src="https://placehold.co/600x400/555/fff?text=Fashion" class="card-img-top" alt="Blog Post Image 2">
+          <div class="card-body d-flex flex-column">
+            <div class="author-info d-flex justify-content-between">
+              <span class="author-name text-start">Youtube</span>
+              <span class="post-date">13th Dec '15</span>
+            </div>
+            <h5 class="card-title">PORTABLE FASHION FOR YOUNG WOMEN</h5>
+            <p class="card-text">
+              You may be a skillful, effective employer but if you
+              don't trust your personnel and the opposite, then
+              the chances of improving.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card blog-card h-100">
+          <img src="https://placehold.co/600x400/555/fff?text=Fashion" class="card-img-top" alt="Blog Post Image 2">
+          <div class="card-body d-flex flex-column">
+            <div class="author-info d-flex justify-content-between">
+              <span class="author-name text-start">Youtube</span>
+              <span class="post-date">13th Dec '15</span>
+            </div>
+            <h5 class="card-title">PORTABLE FASHION FOR YOUNG WOMEN</h5>
+            <p class="card-text">
+              You may be a skillful, effective employer but if you
+              don't trust your personnel and the opposite, then
+              the chances of improving.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-section py-4">
+    <div class="container">
+      <div class="row align-items-center pb-5">
+        <div class="col-lg-7">
+          <h2 class="mb-2">
+            Let's create the
+            content that will
+            engage, excite and
+            inform.
+          </h2>
+        </div>
+        <div class="col-lg-5 btn-discuss-wrapper text-lg-end">
+          <a href="#" class="btn btn-primary">
+            Let's Start Discuss <i class="bi bi-chevron-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="row footer-social-nav">
+        <div class="col-md-6 social-icons mb-3 mb-md-0">
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        </div>
+        <div class="col-md-6">
+          <ul class="nav footer-nav justify-content-md-end">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="footer-copyright">
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
   <script defer type="text/javascript" src="/main.js"></script>
 </body>
+
 </html>

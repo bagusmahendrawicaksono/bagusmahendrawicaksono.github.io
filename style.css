@@ -1,1 +1,90 @@
 /* Add styles here */
+.book-table {
+    border: 2px solid #555;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.book-table p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.book-table a {
+    color: #d32f2f;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.video-play-btn {
+    position: relative;
+    display: inline-block;
+}
+
+.video-play-btn::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.video-play-btn .btn-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: white;
+}
+
+.skills-tags {
+    margin-top: 0.75rem;
+}
+
+.skill-tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    color: #333;
+    background-color: #eef3f8;
+    border-radius: 16px;
+    padding: 0.25rem 0.75rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.skill-tag i {
+    margin-right: 0.25rem;
+}
+
+.footer-section {
+    background-color: #f8f5f0;
+}
+
+.social-icons a {
+    color: #212529; /* Dark icon color */
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+}
+.social-icons a:hover {
+    color: #0d6efd; /* Blue on hover */
+}
+.social-icons a:last-child {
+    margin-right: 0;
+}
+
+.footer-copyright {
+    border-top: 1px solid #e0e0e0; /* Light gray border */
+    padding-top: 1.5rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #6c757d; /* Bootstrap muted text color */
+}
+.footer-copyright a {
+    color: #0d6efd;
+    text-decoration: none;
+}

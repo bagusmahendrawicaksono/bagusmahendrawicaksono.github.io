@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience Section</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f2f5; /* LinkedIn-ish background */
+        }
+        .experience-section {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .experience-header h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+        .experience-header .icons i {
+            font-size: 1.2rem;
+            color: #666;
+            margin-left: 1rem;
+            cursor: pointer;
+        }
+        .company-block {
+            padding: 1.5rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .company-block:last-child {
+            border-bottom: none;
+        }
+        .company-logo {
+            width: 48px;
+            height: 48px;
+            background-color: #e0e0e0; /* Placeholder color */
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #333;
+            margin-right: 1rem;
+        }
+        .company-info h5 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.1rem;
+        }
+        .company-info p {
+            font-size: 0.875rem;
+            color: #666;
+            margin-bottom: 0.25rem;
+        }
+        .role-list {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 1rem;
+            margin-left: 0.5rem; /* Indentation for roles under a company */
+        }
+        .role-item {
+            display: flex;
+            padding-top: 1rem;
+            position: relative;
+        }
+        .role-item::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background-color: #adb5bd; /* Dot color */
+            border-radius: 50%;
+            position: absolute;
+            left: -20px; /* Position dot to the left */
+            top: 1.45rem; /* Align with first line of text */
+        }
+        .role-details h6 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 0.1rem;
+        }
+        .role-details p {
+            font-size: 0.8rem;
+            color: #666;
+            margin-bottom: 0.25rem;
+        }
+        .job-description {
+            font-size: 0.875rem;
+            color: #333;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .see-more {
+            color: #0a66c2;
+            font-weight: 600;
+            font-size: 0.875rem;
+            cursor: pointer;
+        }
+        .see-more:hover {
+            text-decoration: underline;
+        }
+        .skills-pills {
+            margin-top: 0.75rem;
+        }
+        .skill-pill {
+            display: inline-block;
+            font-size: 0.75rem;
+            color: #333;
+            background-color: #eef3f8; /* Light blue-gray pill background */
+            border-radius: 16px;
+            padding: 0.25rem 0.75rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .skill-pill i {
+            margin-right: 0.25rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-4 mb-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="experience-section">
+                <div class="experience-header">
+                    <h2>Experience</h2>
+                    <div class="icons">
+                        <i class="bi bi-plus-lg"></i>
+                        <i class="bi bi-pencil"></i>
+                    </div>
+                </div>
+
+                <div class="company-block">
+                    <div class="d-flex">
+                        <div class="company-logo">OCBC</div>
+                        <div class="company-info">
+                            <h5>OCBC</h5>
+                            <p>Full-time · 5 yrs</p>
+                            <p>Hybrid</p>
+                        </div>
+                    </div>
+                    <ul class="role-list ms-4">
+                        <li class="role-item">
+                            <div class="role-details">
+                                <h6>Application Architect</h6>
+                                <p>May 2024 - Present · 1 yr 1 mo</p>
+                                <p>WP, Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia</p>
+                                <div class="job-description">
+                                    OCBC Bank is Southeast Asia's second-largest financial services group by assets and one of the world's most
+                                    highly rated banks. As Application Architect I'm responsible to design application that meet with busi... <span class="see-more">see more</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="role-item">
+                            <div class="role-details">
+                                <h6>Software Developer Chapter Leads</h6>
+                                <p>Jun 2020 - May 2024 · 4 yrs</p>
+                                <p>WP, Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia</p>
+                                <div class="job-description">
+                                    As a Chapter Lead, I lead a team of software engineers in developing and delivering high-quality software
+                                    products.... <span class="see-more">see more</span>
+                                </div>
+                                <div class="skills-pills">
+                                    <span class="skill-pill"><i class="bi bi-code-slash"></i>Microservices</span>
+                                    <span class="skill-pill"><i class="bi bi-code-slash"></i>React.js</span>
+                                    <span class="skill-pill">+1 skill</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="company-block">
+                    <div class="d-flex">
+                        <div class="company-logo">dF</div> <div class="company-info flex-grow-1">
+                            <h5>Senior Java Consultant</h5>
+                            <p>diava Factory Sdn Bhd</p>
+                            <p>Mar 2016 - Apr 2020 · 4 yrs 2 mos</p>
+                            <p>Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia</p>
+                        </div>
+                    </div>
+                    <div class="skills-pills mt-2">
+                        <span class="skill-pill"><i class="bi bi-code-slash"></i>Microservices</span>
+                    </div>
+                </div>
+
+                <div class="company-block">
+                    <div class="d-flex">
+                        <div class="company-logo">SL</div> <div class="company-info flex-grow-1">
+                            <h5>Senior Java Consultant</h5>
+                            <p>Silverlake Group of Companies</p>
+                            <p>Mar 2016 - Mar 2020 · 4 yrs 1 mo</p>
+                            <p>Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia</p>
+                        </div>
+                    </div>
+                    <div class="job-description">
+                        Silverlake Group is a Software Organization that recognized as one of the largest IT Solution Provider in Asia
+                        Pacific for Banking and Finance. Silverlake aims to be the dominant system integrator of core banking ... <span class="see-more">see more</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
