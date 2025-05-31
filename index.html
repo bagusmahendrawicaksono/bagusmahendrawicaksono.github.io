@@ -1,15 +1,353 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <title>Bagus Mahendra Wicaksono</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="icon" type="image/png" href="img/favicon.png" />
   <link href='/style.css' rel='stylesheet'>
 </head>
+
 <body>
-  <h1>Hello, world!</h1>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  <nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm py-3">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+        BagusXMahendra
+      </a>
+      <!-- Hamburger toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menu items -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-me-header">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tech-speaker">SPEAKING</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#my-resume">RESUME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#my-blog">SOCIAL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://medium.com/@bagusxmahendra" target="_blank">ARTICLES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Login Button -->
+      <div class="d-none d-lg-block">
+        <a href="https://www.linkedin.com/in/bagusmahendrawicaksono/" target="_blank" class="btn btn-outline-primary" role="button"><i class="bi bi-linkedin"></i> Linkedin</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container col-xxl-8 px-4 py-3">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-12 col-lg-6">
+        <img src="img/bagus-hero.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+          height="500" loading="lazy">
+      </div>
+
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Bagus Mahendra Wicaksono</h1>
+        <p class="lead">Application Architect | Tech Leader | Speaker</p>
+        <p>
+          Bagus Mahendra Wicaksono application architects with strong background of software engineering for the Banking and Finance sector, drawing on deep expertise in cloud-native systems, microservices, and Artificial Intelligence (AI). A proven leader, he excels in guiding large engineering teams and delivering complex, high-stakes projects with precision. Beyond the code, Bagus is a compelling Tech Speaker who sparks meaningful industry dialogue at major conferences. His core mission is simple yet powerful: Code. Craft. Inspire. Let's connect!
+        </p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <a href="https://www.linkedin.com/in/bagusmahendrawicaksono/" target="_blank" class="btn btn-outline-primary btn-lg px-4" role="button"><i class="bi bi-linkedin"></i></a>
+          <a href="https://www.youtube.com/@BagusXMahendra" target="_blank" class="btn btn-outline-primary btn-lg px-4" role="button"><i class="bi bi-youtube"></i></a>
+          <a href="https://medium.com/@bagusxmahendra" target="_blank" class="btn btn-outline-primary btn-lg px-4" role="button"><i class="bi bi-medium"></i></a>
+          <a href="https://github.com/bagusmahendrawicaksono" target="_blank" class="btn btn-outline-primary btn-lg px-4" role="button"><i class="bi bi-github"></i></a>
+          <a href="https://www.instagram.com/bagusxmahendra/" target="_blank" class="btn btn-outline-primary btn-lg px-4" role="button"><i class="bi bi-instagram"></i></a>
+          <a href="https://x.com/BagusXMahendra" target="_blank" class="btn btn-outline-primary btn-lg px-4" role="button"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container px-4 py-5" id="about-me-header">
+    <div class="text-center mb-5">
+      <small>MY EXPERTISE</small>
+      <h2 class="fs-2">What I Do</h2>
+    </div>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div
+          class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <i class="bi bi-file-code-fill"></i>
+
+        </div>
+        <div>
+          <h3 class="fs-2 text-body-emphasis">Software Engineer</h3>
+          <p>
+            Mastering Java microservices and React frontend applications, with a focus on designing and building scalable, resilient cloud-native systems and microservices architectures. Experienced in developing solutions for the banking and finance industry. Passionate about how Artificial Intelligence (AI) is applied in real-world applications, especially in financial technology and digital transformation.
+          </p>
+          <a href="https://github.com/bagusmahendrawicaksono" target="_blank" class="btn btn-outline-primary" role="button"><i class="bi bi-github"> Explore on Github</i></a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div
+          class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <i class="bi bi-people-fill"></i>
+
+        </div>
+        <div>
+          <h3 class="fs-2 text-body-emphasis">Tech Leadership</h3>
+          <p>
+            As a chapter leader and certified Project Manager Professional, combines technical leadership with strategic project execution. Leads and mentors software engineers to deliver high-quality solutions while successfully managing complex projects in the banking sector. Strong advocate for people development and Agile methodologies to deliver project successfully.
+          </p>
+          <a href="https://github.com/bagusmahendrawicaksono" target="_blank" class="btn btn-outline-primary" role="button"><i class="bi bi-medium"> Read Articles</i></a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div
+          class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <i class="bi bi-person-workspace"></i>
+
+        </div>
+        <div>
+          <h3 class="fs-2 text-body-emphasis">Content Creator</h3>
+          <p>
+            From teaching kids coding and robotics to speaking at tech conferences with hundreds of software engineers, he has witnessed how a small spark can grow into a lasting buzz. Inspired by those moments, content is now shared on social media—ranging from articles and short videos to tutorials, behind-the-scenes glimpses, and spontaneous thoughts.
+          </p>
+          <a href="https://www.youtube.com/@BagusXMahendra" target="_blank" class="btn btn-outline-primary" role="button"><i class="bi bi-youtube"></i> Watch My Talks</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container py-5 px-2" id="tech-speaker">
+  <div class="text-center mb-5">
+    <small>ABOUT ME</small>
+    <h2 class="fs-2">Tech Speaker</h2>
+  </div>
+  <div class="row align-items-center">
+    <div class="col-12 col-md-6 mb-4 mb-md-0 text-center text-md-start">
+      <img src="img/bagus-speech.png" alt="Speaker" class="img-fluid rounded w-100 mb-3">
+      <div class="border p-3 text-center">
+        <p class="mb-1 fw-bold">Invite Me to Speak</p>
+        <a href="mailto:bagusmwicaksono@gmail.com" class="text-danger text-decoration-none">bagusmwicaksono@gmail.com</a>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <p class="fst-italic text-muted">
+        Passionate about sharing knowledge on modern software development, cloud technologies, and leadership in tech. Key speaking topics:
+      </p>
+      <ul class="list-unstyled mb-3">
+        <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Microservices Architecture: Patterns & Best Practices</li>
+        <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Building Resilient Cloud-Native Applications</li>
+        <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i>Practical AI: From Concept to Code</li>
+      </ul>
+      <p>
+        I enjoy engaging with audiences at conferences, meetups, and corporate events. Let's talk about how I can bring value to your next event!
+      </p>
+      <div class="position-relative">
+        <img src="img/speaker-img.png" alt="Speech Video" class="img-fluid rounded w-100">
+        <a href="#" class="position-absolute top-50 start-50 translate-middle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="red" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8a8 8 0 1 1-16 0A8 8 0 0 1 16 8zM6.271 5.055A.5.5 0 0 0 5.5 5.5v5a.5.5 0 0 0 .771.424l4-2.5a.5.5 0 0 0 0-.848l-4-2.5z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+
+  <div class="container py-5" id="my-resume">
+    <div class="text-center mb-5">
+      <small>MY CAREER PATH</small>
+      <h2 class="fs-2">My Resume</h2>
+    </div>
+    <div class="text-center mb-5">
+      <a href="/assets/Bagus_Mahendra_CV.pdf" class="btn btn-primary btn-lg px-4" download>
+        <i class="bi bi-download me-2"></i>Download CV
+      </a>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-9">
+        <div class="bg-white rounded">
+          <h4 class="mb-2">Work Experience</h4>
+          <div class="d-flex mb-2 py-2 border-bottom">
+            <div>
+              <img src="img/ocbc_bank_logo.jpg" alt="Logo" width="48" height="48" class="rounded align-text-top">
+            </div>
+            <div class="ms-3">
+              <h5>Application Architect</h5>
+              <div class="company-name">OCBC Malaysia</div>
+              <div class="date-location">May 2024 - Present · Kuala Lumpur, Malaysia</div>
+              <div class="experience-description">
+                OCBC Bank is Southeast Asia's second-largest financial services group by assets and one of the world’s most highly rated banks, As Application Architect I’m responsible to design application that meet with business requirements, key duties, and responsibilities:
+                <ul>
+                  <li>Working on the Design of Loan Management System, with main objective to eliminate manual processing to fully automated processing for loan application.</li>
+                  <li>Enhanced system performance leverage data caching to reduce load time and improving user experience.</li>
+                  <li>Ensure adherence to local Regulation for the loan application from Malaysia Regulator.</li>
+                </ul>
+              </div>
+              <div class="skills-tags">
+                <span class="skill-tag"><i class="bi bi-cash-coin"></i>Loan Module</span>
+                <span class="skill-tag"><i class="bi bi-book"></i>TOGAF</span>
+                <span class="skill-tag"><i class="bi bi-cloud-fill"></i>CLOUD</span>
+                <span class="skill-tag"><i class="bi bi-diagram-3-fill"></i>Microservices</span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex mb-2 py-2 border-bottom">
+            <div>
+              <img src="img/ocbc_bank_logo.jpg" alt="Logo" width="48" height="48" class="rounded align-text-top">
+            </div>
+            <div class="ms-3">
+              <h5>Software Developer Chapter Leads</h5>
+              <div class="company-name">OCBC Malaysia</div>
+              <div class="date-location">Jun 2020 - May 2024 · Kuala Lumpur, Malaysia</div>
+              <div class="experience-description">
+                As a Chapter Lead, I guide a team of software engineers in building and delivering high-quality software products, with a strong focus on technical excellence and team growth. Key Contributions:
+                <ul>
+                  <li>Led the design and development of scalable Java microservices and React applications, delivering reliable solutions on time and within budget.</li>
+                  <li>Provided technical leadership and Level 3 support, ensuring smooth delivery and system performance.</li>
+                  <li>Mentored multiple squads, fostering collaboration, Agile best practices, and continuous team development.</li>
+                </ul>
+              </div>
+              <div class="skills-tags">
+                <span class="skill-tag"><i class="bi bi-code-slash"></i>Java</span>
+                <span class="skill-tag"><i class="bi bi-code-slash"></i>Spring Boot</span>
+                <span class="skill-tag"><i class="bi bi-code-slash"></i>React</span>
+                <span class="skill-tag"><i class="bi bi-cloud-fill"></i>Cloud</span>
+                <span class="skill-tag"><i class="bi bi-diagram-3-fill"></i>Microservices</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-3">
+        <div class="bg-white rounded py-2 mb-4">
+          <h4>Education</h4>
+          <div class="mb-2 py-2">
+            <h6>Bachelor of Information Technology</h6>
+            <p>Universitas Dinamika (Stikom Surabaya)</p>
+            <p>2009</p>
+          </div>
+        </div>
+
+        <div class="resume-panel">
+          <h4>Certification</h4>
+          <div class="mb-2 py-2">
+            <h6>ITIL 4 (r) Foundation</h6>
+            <p>AXELOS Global Best Practices</p>
+            <p>Issued: Apr 2023</p>
+          </div>
+          <div class="mb-2 py-2">
+            <h6>Scrum Fundamentals Ceritified (SFC)</h6>
+            <p>SCRUMStudy - Accreditation Body for Scrum and Agile</p>
+            <p>Issued: Mar 2019</p>
+          </div>
+        </div>
+        <div class="mb-2 py-2">
+          <h6>Project Management Profesional (PMP)</h6>
+          <p>Project Management Institute</p>
+          <p>Issued: Nov 2013</p>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-5" id="my-blog">
+    <div class="text-center mb-5">
+      <small>MY LATEST POST</small>
+      <h2 class="fs-2">Social Media</h2>
+    </div>
+    <p class="text-center">(no data)</p>
+  </div>
+
+  <footer class="footer-section py-4" id="footer">
+    <div class="container">
+      <div class="row align-items-center pb-5">
+        <div class="col-lg-7">
+          <h2 class="mb-2">
+            I'm always open to discussing new projects, speaking opportunities, or just connecting with fellow tech enthusiasts.
+          </h2>
+        </div>
+        <div class="col-lg-5 btn-discuss-wrapper text-lg-end">
+          <a href="#" class="btn btn-primary">
+            Let's Start Discuss <i class="bi bi-chevron-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="row footer-social-nav">
+        <div class="col-md-6 social-icons mb-3 mb-md-0">
+          <a href="https://www.linkedin.com/in/bagusmahendrawicaksono/" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <a href="https://www.youtube.com/@BagusXMahendra" target="_blank"><i class="bi bi-youtube"></i></a>
+          <a href="https://medium.com/@bagusxmahendra" target="_blank"><i class="bi bi-medium"></i></a>
+          <a href="https://github.com/bagusmahendrawicaksono" target="_blank"><i class="bi bi-github"></i></a>
+          <a href="https://www.instagram.com/bagusxmahendra/" target="_blank"><i class="bi bi-instagram"></i></a>
+          <a href="https://x.com/BagusXMahendra" target="_blank"><i class="bi bi-twitter-x"></i></a>
+          
+        </div>
+        <div class="col-md-6">
+          <ul class="nav footer-nav justify-content-md-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-me-header">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tech-speaker">SPEAKING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#my-resume">RESUME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#my-blog">SOCIAL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://medium.com/@bagusxmahendra" target="_blank">ARTICLES</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="footer-copyright">
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
   <script defer type="text/javascript" src="/main.js"></script>
 </body>
+
 </html>
